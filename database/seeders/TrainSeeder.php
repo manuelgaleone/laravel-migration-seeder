@@ -21,7 +21,7 @@ class TrainSeeder extends Seeder
             $new_train->azienda = $faker->randomElement(['Trenitalia', 'Italo', 'AirTrain', 'VelociTrain']);
             $new_train->stazione_di_partenza = $faker->city();
             $new_train->stazione_di_arrivo = $faker->city();
-            $new_train->orario_di_partenza = $faker->time();
+            $new_train->orario_di_partenza = $faker->time('H:i');
             $new_train->orario_di_arrivo = $faker->time();
             $new_train->codice_treno = $faker->bothify('#####');
             $new_train->numero_carrozze = $faker->numberBetween(5, 10);
