@@ -1,12 +1,12 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="main_content_wrap y-3">
-    <div class="main_content_elements">
+<div class="main_content_wrap">
+    <div class="main_content_elements py-3">
         <div class="container">
             <div class="row">
                 @foreach($trains as $train)
-                <div class="card" style="width: 18rem;">
+                <div class="card m-2" style="width: 18rem;">
                     <img class="card-img-top" src="https://www.thetrainline.com/cmsmedia/cms/9486/man_phone-hero_2x.jpg" alt="Card image.">
                     <div class="card-body text-center">
                         <h5 class="card-title">
